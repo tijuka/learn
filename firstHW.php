@@ -25,6 +25,7 @@ elseif ($price > 600 && $price < 700) {
 else
     echo "Price is ok";
 
+
     ?>
 
 
