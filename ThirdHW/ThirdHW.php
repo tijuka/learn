@@ -11,8 +11,21 @@ $MyMovies [4] = "Family Guy";
 $MyMovies [5] = "Simpsons";
 
 
-echo "<h3> Mano megstamiausi serialai: </h3><br>"."<ol>"."<li>".$MyMovies {1}."<li>"
-    .$MyMovies {2}. "<li>" .$MyMovies {3}. "<li>" .$MyMovies{4} ."<li>" .$MyMovies {5} . "<br>";
+//echo "<h3> Mano megstamiausi serialai: </h3><br>"."<ol>"."<li>".$MyMovies {1}."<li>"
+  //  .$MyMovies {2}. "<li>" .$MyMovies {3}. "<li>" .$MyMovies{4} ."<li>" .$MyMovies {5} . "<br>";
+
+foreach ($MyMovies as $series)
+    echo "<li>".$series ."</li>";
+echo "<br>";
+
+?>
+
+<?php
+//$tija=1;
+//while($tija<=15):
+
+    //echo"<ul>Tija</ul>" .$tija++
+//endwhile;
 
 ?>
 
@@ -51,28 +64,44 @@ $shopping_cart = [
     ]
 ];
 
+foreach ($shopping_cart as $val) {
+    $kaina = $val ['quantity']*$val ['price'];
 
-$applecost = $shopping_cart[4]['quantity']*$shopping_cart[4]['price'];
-
-echo "<br> Obuoliai kainuoja " .$applecost ." Euro.";
-
-$bananacost = $shopping_cart [3]['quantity']*$shopping_cart[3]['price'];
-
-echo "<br> Bananai kainuoja " .$bananacost ." Euro.";
+if ($val ['type'] == 'fruits')
+    echo $val ['name'] . " costs " . $kaina . "Euro. <br>";
+}
 
 echo "<br>";
 
-$potatocost = $shopping_cart [0] ['quantity']*$shopping_cart[0] ['price'];
+foreach ($shopping_cart as $val) {
+    $kaina = $val ['quantity']*$val ['price'];
 
-echo "<br> Bulves kainuoja " .$potatocost ." Euro.";
+    if ($val['type'] == 'vegetables')
+        echo $val ['name'] . "costs ".$kaina . " Euro. <br>";
+}
 
-$onioncost = $shopping_cart [1] ['quantity']*$shopping_cart[1] ['price'];
 
-echo "<br> Svogunai kainuoja " .$potatocost ." Euro.";
+//$applecost = $shopping_cart[4]['quantity']*$shopping_cart[4]['price'];
 
-$cucumbercost = $shopping_cart[2] ['quantity']*$shopping_cart [2] ['price'];
+//echo "<br> Obuoliai kainuoja " .$applecost ." Euro.";
 
-echo "<br> Agurkai kainuoja " .$cucumbercost . " Euro.";
+//$bananacost = $shopping_cart [3]['quantity']*$shopping_cart[3]['price'];
+
+//echo "<br> Bananai kainuoja " .$bananacost ." Euro.";
+
+//echo "<br>";
+
+//$potatocost = $shopping_cart [0] ['quantity']*$shopping_cart[0] ['price'];
+
+//echo "<br> Bulves kainuoja " .$potatocost ." Euro.";
+
+//$onioncost = $shopping_cart [1] ['quantity']*$shopping_cart[1] ['price'];
+
+//echo "<br> Svogunai kainuoja " .$potatocost ." Euro.";
+
+//$cucumbercost = $shopping_cart[2] ['quantity']*$shopping_cart [2] ['price'];
+
+//echo "<br> Agurkai kainuoja " .$cucumbercost . " Euro.";
 
 ?>
 
@@ -94,7 +123,3 @@ Echo "<br>";
 MyFunction($MyArray)
 
 ?>
-
-
-
-
