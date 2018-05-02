@@ -1,0 +1,10 @@
+{
+    "name": "lenovo/devintas",
+    "authors": [
+        {
+            "name": "tijuka",
+            "email": "you@example.com"
+        }
+    ],
+    "require": {}
+}
