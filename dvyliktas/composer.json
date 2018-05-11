@@ -1,0 +1,16 @@
+{
+    "name": "lenovo/dvyliktas",
+    "authors": [
+        {
+            "name": "tijuka",
+            "email": "you@example.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
